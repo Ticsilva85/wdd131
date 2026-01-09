@@ -1,0 +1,172 @@
+/* CSS HEX
+--dark-khaki: #463f1aff;
+--brown-bark: #60492cff;
+--linen: #f9ebe0ff;
+--bondi-blue: #208aaeff;
+--prussian-blue: #0d2149ff; */
+
+header span {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+}
+
+#course-title {
+    text-align: center;
+    font-family: 'Delius';
+    font-size: 30px;
+    color: #f9ebe0ff;
+    background-color: #0d2149ff;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+nav{
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: linen;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Delius';
+    color: #463f1aff;;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #208aaeff;
+}
+
+main h1 {
+    font-size: 30px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    font-family: 'Barlow';
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.left-column, .right-column {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.right-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: #0d2149ff;
+    color: white;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.profile {
+    height: 250px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.about-flex {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.about-flex p {
+    font-size: 20px;
+    padding: 20px
+}
+
+.location-flex {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.location-flex p {
+    padding: 20px;
+}
+
+.place {
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 0 5px 20px;
+    position: relative;
+}
+
+.place::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #0d2149ff;
+    margin-top: 6px;
+}
+
+.country-flag{
+    width: 200px;
+    display: block;
+    padding-top: 5px;
+}
+
+figure {
+    width: fit-content;
+    text-align: center  ;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d2149ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
