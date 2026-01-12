@@ -75,6 +75,7 @@ main h1 {
 .left-column, .right-column {
     border: 1px solid #ccc;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 .right-column ul {
@@ -106,7 +107,6 @@ main h1 {
 }
 
 .about-flex p {
-    font-size: 20px;
     padding: 20px
 }
 
@@ -119,6 +119,7 @@ main h1 {
 
 .location-flex p {
     padding: 20px;
+    font-size: 20px;
 }
 
 .place {
