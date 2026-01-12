@@ -26,10 +26,15 @@ nav {
 }
 
 .navigation {
+<<<<<<< HEAD
     list-style: none;
     margin: 0;
     padding: 0;
 	display: flex;
+=======
+	display: flex;
+	flex-wrap: wrap;
+>>>>>>> db0f53c74812142b2764aa340b2525a4044c5976
 	background-color: #333;
 	align-items: center;
     height: 75px;

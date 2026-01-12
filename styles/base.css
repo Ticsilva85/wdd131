@@ -164,9 +164,5 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
