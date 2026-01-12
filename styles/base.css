@@ -12,13 +12,18 @@ header span {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
+}
+
+header {
+    font-family: 'Delius';
+}
+
+main {
+    font-family: 'Barlow';
 }
 
 #course-title {
     text-align: center;
-    font-family: 'Delius';
     font-size: 30px;
     color: #f9ebe0ff;
     background-color: #0d2149ff;
@@ -83,6 +88,7 @@ main h1 {
     color: white;
     padding: 10px;
     font-weight: bold;
+    font-size: 20px;
     text-align: center;
     border-radius: 8px 8px 0px 0px;
 }
