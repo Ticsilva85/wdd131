@@ -11,6 +11,8 @@
 
 * {
     font-family: 'Ubuntu';
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -22,33 +24,31 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 40px;
 }
 
 header h1 {
-    font-size: 80px;
-    padding-left: 40px;
+    font-size: 40px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 nav {
     margin-left: auto;
+    font-weight: 300;
+    font-size: 30px;
 }
 
 nav ul {
     list-style: none;
-    /* padding: 0;
+    padding: 0;
     margin: 0;
-    display: flex;
-    align-items: center; */
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 1.3rem;
-    padding: 40px;
-    justify-content: space-evenly;
-
+    padding: 15px 25px;
 }
 
 nav a:hover {
@@ -63,14 +63,16 @@ nav a:hover {
 /* === MAIN === */
 .heading {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 400;
+    padding-top: 30px;
 }
 
 .temple-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 40px;
 }
 
 figure {
@@ -95,10 +97,65 @@ figure img {
 figcaption {
     text-align: center;
     padding: 10px;
+    font-size: 20px;
 }
 
 figure:hover {
-    outline-color: #F6CE71;
-    outline-offset: 6px; /* 👈 cria “espaço” ao redor */
+    outline-color: #ACBAC4;
+    outline-offset: 6px; 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* === BURGER MENU ===
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 20px;
+
+    display: block;
+}
+
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+nav ul.open {
+    max-height: 500px;
+}
+
+@media (max-width: 640px) {
+
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #30364F;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+} */
+
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    background-color: #30364F;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+p {
+    padding-bottom: 10px;
 }
