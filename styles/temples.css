@@ -1,85 +1,104 @@
-/* === COLOR PALLET === */
-
 /* 
-#576A8F - Deep blue
-#B7BDF7 - Ligt blue
-#FFF8DE - Cream
-#FF7444 - Orange
+=== COLOR PALETHE ===
+
+#30364F - Navy blue
+#ACBAC4 - Warm gray
+#E1D9BC - Sand
+#F0F0DB - Eggshell
+#F6CE71 - Ochre
 */
+
+
 * {
-    font-family: 'Delius', cursive;
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
 }
+
+/* === HEADER === */
 
 header {
-  background-color: #576A8F;
-  color: white;
-  padding: 1rem;
+    background-color: #30364F;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-#menu {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
+header h1 {
+    font-size: 80px;
+    padding-left: 40px;
+    font-weight: 400;
 }
 
 nav {
-  display: none;
-}
-
-nav.open {
-  display: block;
+    margin-left: auto;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    /* padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; */
 }
 
 nav a {
-  display: block;
-  padding: 1rem;
-  color: white;
-  text-decoration: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 40px;
+    justify-content: space-evenly;
+
 }
 
 nav a:hover {
-  background-color: #FF7444;
+    background-color: #ACBAC4;
+    color: #525b80;
 }
 
 .active {
-  color: #FF7444;
+    color: #C9A43A;
 }
 
-/* MAIN */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
+/* === MAIN === */
+.heading {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
 }
 
 .temple-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
 }
 
 figure {
-  background: #FFF8DE;
-  padding: 0.5rem;
-  border-radius: 6px;
-  text-align: center;
+    position: relative;
+    border-radius: 5px;
+
+    outline: 4px solid transparent;
+    outline-offset: 0;
+
+    transition:
+        box-shadow 0.3s ease,
+        outline-offset 0.3s ease,
+        outline-color 0.3s ease;
 }
 
 figure img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    display: block;
+    border-radius: 5px;
 }
 
 figcaption {
-    margin-top: 0.5rem;
-    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+figure:hover {
+    outline-color: #F6CE71;
+    outline-offset: 6px; /* 👈 cria “espaço” ao redor */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
