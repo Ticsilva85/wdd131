@@ -1,20 +1,2 @@
-@media (min-width: 640px) {
 
-  #menu {
-    display: none;
-  }
 
-  nav {
-    display: block;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
-.temples-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-}
-}

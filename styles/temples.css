@@ -5,26 +5,15 @@
 #B7BDF7 - Ligt blue
 #FFF8DE - Cream
 #FF7444 - Orange
-
-https://colorhunt.co/palette/576a8fb7bdf7fff8deff7444
 */
 * {
-  box-sizing: border-box;
-  font-family: 'Delius', cursive;
-}
-
-body {
-  margin: 0;
+    font-family: 'Delius', cursive;
 }
 
 header {
   background-color: #576A8F;
   color: white;
   padding: 1rem;
-}
-
-header h1 {
-  margin: 0;
 }
 
 #menu {
