@@ -23,8 +23,9 @@ header {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 40px;
+    padding: 20px 40px;
     position: relative;
 }
 
@@ -35,36 +36,53 @@ header h1 {
 }
 
 nav {
-    margin-left: auto;
     font-weight: 300;
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 nav ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: #30364F;
+    z-index: 1000;
 }
 
 nav li {
     width:100%;
+    margin: 0;
+    display: flex;
 }
 
 nav a {
-    display: block;
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding: 20px 40px;
     text-decoration: none;
     color: white;
-    padding: 15px 25px;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 nav a:hover {
     background-color: #ACBAC4;
-    color: #525b80;
 }
 
-.active {
-    color: #C9A43A;
+nav a.active {
+    color: #ffcf4a;
+    font-weight: 500;
 }
 
 /* === MAIN === */
@@ -120,8 +138,7 @@ figure:hover {
     color: white;
     font-size: 40px;
     cursor: pointer;
-    padding: 20px;
-
+    padding: 0;
     display: block;
 }
 
@@ -131,7 +148,8 @@ nav ul.open {
 
 @media (max-width: 640px) {
     nav {
-        position: relative;
+        margin-left:0;
+        width: 100%;
     }
 
     #menu-toggle {
@@ -141,6 +159,7 @@ nav ul.open {
     nav ul {
         position: absolute;
         top: 100%;
+        left: 0;
         right: 0;
         width: 100%;
         background-color: #30364F;
