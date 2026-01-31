@@ -1,0 +1,140 @@
+/* 
+=== COLOR SCHEME === 
+Australian Green: #00843D
+Australian Gold : #FFCD00
+Dark Blue: #00008B
+White: #FFFFFF
+Red: #FF0000
+
+=== FONT FAMILY ===
+Title: Playwrite NZ Basic
+Body: SN Pro
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'SN Pro';
+}
+
+/* === HEADER === */
+
+h1 {
+    font-family: 'Playwrite NZ Basic';
+    font-weight: 300;
+    font-size: 80px;
+    text-align: center;
+    background-color: #00008B;
+    color: white;
+    padding: 40px;
+    display: block;
+    width: 100%;
+}
+
+.space {
+    background-color: red;
+    padding: 20px;
+}
+
+picture img {
+    width: 100%;
+}
+
+/* === MAIN === */
+main {
+    position: relative;
+    display: block;
+}
+
+
+.hero-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* === DATA CARD === */
+:root {
+    --green-header: #00843D;
+    --bg-card: rgba(255, 255, 255, 0.4);
+    --text-color: black;
+}
+
+.data-card {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 750px;
+    background-color: var(--bg-card);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+.data-header {
+    background-color: var(--green-header);
+    color: white;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    width: 290px;
+    font-size: 40px;
+}
+
+.data-header h2 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.data-content {
+    padding: 20px;
+}
+
+.data-row {
+    display: flex;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.label {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+    color: var(--text-color);
+}
+
+/* Right side style */
+.value {
+    flex: 1.2; /* More space for bigger values */
+    text-align: left;
+    padding-left: 5px;
+    color: var(--text-color);
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+} 
+
+@media (max-width: 600px) {
+    .data-card {
+        position: static; 
+        width: 90%;
+        margin: 20px auto;
+    }
+}    

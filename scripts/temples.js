@@ -1,6 +1,6 @@
 const lastModified = document.lastModified;
 
-document.getElementById("lastModified").textContent = `Last Modification: ${lastModified}`;console.log("JS carregado");
+document.getElementById("lastModified").textContent = `Last Modification: ${lastModified}`;
 
 const menuButton = document.getElementById("menu-toggle");
 const navList = document.querySelector("nav ul");
