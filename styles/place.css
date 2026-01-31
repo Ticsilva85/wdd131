@@ -65,7 +65,7 @@ main {
 /* === DATA CARD === */
 :root {
     --green-header: #00843D;
-    --bg-card: rgba(255, 255, 255, 0.4);
+    --bg-card: rgba(255, 255, 255, 0.6);
     --text-color: black;
 }
 
