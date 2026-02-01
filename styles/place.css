@@ -71,7 +71,7 @@ main {
 
 .data-card {
     position: absolute;
-    top: 50px;
+    top: 1100px;
     left: 50px;
     width: 800px;
     background-color: var(--bg-card);
@@ -121,6 +121,75 @@ main {
     color: var(--text-color);
 }
 
+@media (max-width: 600px) {
+    .data-card {
+        position: static; 
+        width: 90%;
+        margin: 20px auto;
+    }
+}   
+
+/* === WEATHER CARD */
+.weather-card {
+    position: absolute;
+    top: 50px;
+    left: 2950px;
+    width: 800px;
+    background-color: var(--bg-card);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+.weather-header {
+    background-color: var(--green-header);
+    color: white;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    width: 290px;
+    font-size: 40px;
+}
+
+.weather-header h2 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.weather-content {
+    padding: 20px;
+}
+
+.weather-row {
+    display: flex;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.label {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+    color: var(--text-color);
+}
+
+/* Right side style */
+.value {
+    flex: 1.2; /* More space for bigger values */
+    text-align: left;
+    padding-left: 5px;
+    color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+    .weather-card {
+        position: static; 
+        width: 90%;
+        margin: 20px auto;
+    }
+}   
+
 /* === FOOTER === */
 footer {
     text-align: center;
@@ -128,13 +197,7 @@ footer {
     background-color: red;
     padding-top: 10px;
     padding-bottom: 10px;
-
+    font-size: 30px;
 } 
 
-@media (max-width: 600px) {
-    .data-card {
-        position: static; 
-        width: 90%;
-        margin: 20px auto;
-    }
-}    
+ 
