@@ -13,10 +13,12 @@ Body: SN Pro
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'SN Pro';
+
 }
 
 /* === HEADER === */
@@ -31,6 +33,7 @@ h1 {
     padding: 40px;
     display: block;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .space {
@@ -38,68 +41,65 @@ h1 {
     padding: 20px;
 }
 
-picture img {
-    width: 100%;
-}
-
 /* === MAIN === */
 main {
+    display: flex;
+    flex-direction: column;
     position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .hero-container {
     display: flex;
     flex-direction: column; 
 }
 
-.hero-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-
-/* === DATA CARD === */
+/* === DATA CARD, WEATHER CARD === */
 :root {
     --green-header: #00843D;
     --bg-card: rgba(255, 255, 255, 0.6);
     --text-color: black;
 }
 
-.data-card {
-    position: absolute;
-    top: 1100px;
-    left: 50px;
-    width: 800px;
+.data-card, .weather-card {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
     background-color: var(--bg-card);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     border-radius: 4px;
     overflow: hidden;
-    font-size: 40px;
 }
 
-.data-header {
+.data-header, .weather-header {
     background-color: var(--green-header);
     color: white;
-    padding: 15px 25px;
+    padding: 15px;
     margin-bottom: 20px;
-    width: 290px;
-    font-size: 40px;
 }
 
-.data-header h2 {
+.data-header h2, .weather-card h2 {
     margin: 0;
-    font-size: 60px;
+    font-size: 1.5rem;
 }
 
-.data-content {
+.data-content, .weather-content {
     padding: 20px;
+    background-color: rgba(255,255,255,0.5);
 }
 
-.data-row {
+.data-row, .weather-row {
     display: flex;
     margin-bottom: 8px;
     line-height: 1.4;
@@ -129,74 +129,15 @@ main {
     }
 }   
 
-/* === WEATHER CARD */
-.weather-card {
-    position: absolute;
-    top: 50px;
-    left: 2950px;
-    width: 800px;
-    background-color: var(--bg-card);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 4px;
-    overflow: hidden;
-    font-size: 40px;
-}
 
-.weather-header {
-    background-color: var(--green-header);
-    color: white;
-    padding: 15px 25px;
-    margin-bottom: 20px;
-    width: 290px;
-    font-size: 40px;
-}
-
-.weather-header h2 {
-    margin: 0;
-    font-size: 60px;
-}
-
-.weather-content {
-    padding: 20px;
-}
-
-.weather-row {
-    display: flex;
-    margin-bottom: 8px;
-    line-height: 1.4;
-}
-
-.label {
-    flex: 1;
-    text-align: right;
-    font-weight: bold;
-    padding-right: 10px;
-    color: var(--text-color);
-}
-
-/* Right side style */
-.value {
-    flex: 1.2; /* More space for bigger values */
-    text-align: left;
-    padding-left: 5px;
-    color: var(--text-color);
-}
-
-@media (max-width: 600px) {
-    .weather-card {
-        position: static; 
-        width: 90%;
-        margin: 20px auto;
-    }
-}   
 
 /* === FOOTER === */
 footer {
     text-align: center;
     color: white;
     background-color: red;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 30px;
 } 
 
