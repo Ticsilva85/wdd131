@@ -26,7 +26,6 @@ body {
 h1 {
     font-family: 'Playwrite NZ Basic';
     font-weight: 300;
-    font-size: 80px;
     text-align: center;
     background-color: #00008B;
     color: white;
@@ -48,16 +47,11 @@ main {
     position: relative;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .hero-img img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 .hero-container {
@@ -122,6 +116,10 @@ main {
 }
 
 @media (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
     .data-card {
         position: static; 
         width: 90%;
