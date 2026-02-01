@@ -10,30 +10,39 @@ main {
 }
     
 @media (min-width: 1000px) {
-    main {
-        position: relative;
-        display: block;
+
+    .data-card, .weather-card {
+        position: absolute;
+        top: 30%;
+        width: 280px;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(4px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        border-radius: 6px;
+        overflow: hidden;    
     }
 
     .data-card {
-        position: absolute;
+        /* position: absolute;
         top: 30px;
         left: 30px;
         width: 350px;
         z-index: 10;
         margin: 0;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8); */
+        left: 5%;
     }
 
     .weather-card {
-        position: absolute;
+        /* position: absolute;
         bottom: 30px;
         right: 30px;
         left: auto;
         width: 300px;
         z-index: 10;
         margin: 0;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8); */
+        right: 5%;
     }
 
 }

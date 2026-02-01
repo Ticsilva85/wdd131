@@ -33,6 +33,7 @@ h1 {
     display: block;
     width: 100%;
     box-sizing: border-box;
+    font-size: 8rem;
 }
 
 .space {
@@ -51,12 +52,13 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: column; 
+    /* display: flex;
+    flex-direction: column;  */
+    position: relative;
 }
 
 /* === DATA CARD, WEATHER CARD === */
@@ -115,11 +117,16 @@ main {
     color: var(--text-color);
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 3rem;
+@media (max-width: 768px) {
+        .data-card,
+        .weather-card {
+            position: static;
+            width: 90%;
+            margin: 20px auto;    
     }
+}
 
+@media (max-width: 600px) {
     .data-card {
         position: static; 
         width: 90%;
@@ -127,7 +134,22 @@ main {
     }
 }   
 
+/* === WEATHER ICON === */
 
+.data-header h2, .weather-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
 
 /* === FOOTER === */
 footer {
