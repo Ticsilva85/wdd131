@@ -26,7 +26,9 @@ main {
 
     .data-header, .weather-header {
         font-size: 2rem;
-        padding-left: 50px
+        padding-left: 30px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
     .data-content, .weather-content {
@@ -34,7 +36,7 @@ main {
     }
 
     .data-card {
-        top: 40%;
+        top: 35%;
         left: 5%;
     }
 
