@@ -17,21 +17,24 @@ main {
 
     .data-card, .weather-card {
         position: absolute;
-        width: 680px;
+        width: clamp(300px, 40vw, 500px);          
+        max-width: 500px;      
         backdrop-filter: blur(4px);
         box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-        border-radius: 6px;
-        overflow: hidden;
-        font-size: 2rem;
+        border-radius: 6px;        
     }
 
     .data-header, .weather-header {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-left: 50px
     }
 
+    .data-content, .weather-content {
+        font-size: 1.1rem;
+    }
+
     .data-card {
-        top: 50%;
+        top: 40%;
         left: 5%;
     }
 
