@@ -11,6 +11,10 @@ main {
     
 @media (min-width: 1000px) {
 
+    h1 {
+        font-size: 8rem;
+    }
+
     .data-card, .weather-card {
         position: absolute;
         width: 680px;
@@ -18,11 +22,12 @@ main {
         box-shadow: 0 10px 25px rgba(0,0,0,0.6);
         border-radius: 6px;
         overflow: hidden;
-        /* font-size: 2rem; */
+        font-size: 2rem;
     }
 
     .data-header, .weather-header {
         font-size: 3rem;
+        padding-left: 50px
     }
 
     .data-card {
@@ -33,6 +38,10 @@ main {
     .weather-card {
         top: 5%;
         right: 5%;
+    }
+
+    footer {
+        font-size: 2rem;
     }
 
 }
