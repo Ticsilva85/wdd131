@@ -18,7 +18,7 @@ Body: SN Pro
 
 body {
     font-family: 'SN Pro';
-
+    font-size: 1.5rem;
 }
 
 /* === HEADER === */
@@ -52,12 +52,9 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    /* object-fit: cover; */
 }
 
 .hero-container {
-    /* display: flex;
-    flex-direction: column;  */
     position: relative;
 }
 
@@ -69,13 +66,14 @@ main {
 }
 
 .data-card, .weather-card {
-    position: static;
+    /* position: static; */
     width: 90%;
     margin: 20px auto;
     background-color: var(--bg-card);
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     border-radius: 4px;
     overflow: hidden;
+    font-size: 1.5em;
 }
 
 .data-header, .weather-header {
@@ -85,14 +83,10 @@ main {
     margin-bottom: 20px;
 }
 
-.data-header h2, .weather-card h2 {
-    margin: 0;
-    font-size: 1.5rem;
-}
+
 
 .data-content, .weather-content {
     padding: 20px;
-    background-color: rgba(255,255,255,0.5);
 }
 
 .data-row, .weather-row {
@@ -121,7 +115,7 @@ main {
         .data-card,
         .weather-card {
             position: static;
-            width: 90%;
+            width: 100%;
             margin: 20px auto;    
     }
 }
@@ -129,7 +123,7 @@ main {
 @media (max-width: 600px) {
     .data-card {
         position: static; 
-        width: 90%;
+        width: 100%;
         margin: 20px auto;
     }
 }   
@@ -138,17 +132,15 @@ main {
 
 .data-header h2, .weather-header h2 {
     margin: 0;
-    font-size: 1.5rem;
-
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
+
 .weather-icon {
-    width: 40px;
-    height: 40px;
-    fill: white;
+    width: 100px;
+    height: 100px;
 }
 
 /* === FOOTER === */

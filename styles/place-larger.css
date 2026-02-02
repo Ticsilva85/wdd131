@@ -13,35 +13,25 @@ main {
 
     .data-card, .weather-card {
         position: absolute;
-        top: 30%;
-        width: 280px;
-        background-color: rgba(255, 255, 255, 0.75);
+        width: 680px;
         backdrop-filter: blur(4px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.6);
         border-radius: 6px;
-        overflow: hidden;    
+        overflow: hidden;
+        /* font-size: 2rem; */
+    }
+
+    .data-header, .weather-header {
+        font-size: 3rem;
     }
 
     .data-card {
-        /* position: absolute;
-        top: 30px;
-        left: 30px;
-        width: 350px;
-        z-index: 10;
-        margin: 0;
-        background-color: rgba(255, 255, 255, 0.8); */
+        top: 50%;
         left: 5%;
     }
 
     .weather-card {
-        /* position: absolute;
-        bottom: 30px;
-        right: 30px;
-        left: auto;
-        width: 300px;
-        z-index: 10;
-        margin: 0;
-        background-color: rgba(255, 255, 255, 0.8); */
+        top: 5%;
         right: 5%;
     }
 
