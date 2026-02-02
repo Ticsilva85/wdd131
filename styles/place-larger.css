@@ -12,13 +12,13 @@ main {
 @media (min-width: 1000px) {
 
     h1 {
-        font-size: 8rem;
+        font-size: 4rem;
     }
 
     .data-card, .weather-card {
         position: absolute;
-        width: clamp(300px, 40vw, 500px);          
-        max-width: 500px;      
+        width: clamp(300px, 40vw, 400px);          
+        max-width: 400px;      
         backdrop-filter: blur(4px);
         box-shadow: 0 10px 25px rgba(0,0,0,0.6);
         border-radius: 6px;        
@@ -44,7 +44,7 @@ main {
     }
 
     footer {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
 }

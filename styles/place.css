@@ -86,7 +86,7 @@ main {
 .data-header, .weather-header {
     background-color: var(--green-header);
     color: white;
-    padding: 15px;
+    /* padding: 15px; */
     margin-bottom: 20px;
 }
 
