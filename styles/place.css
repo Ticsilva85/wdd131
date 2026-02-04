@@ -50,17 +50,18 @@ h1 {
 }
 
 /* === MAIN === */
-main {
+/* main {
     display: flex;
     flex-direction: column;
     position: relative;
-}
+} */
 
-.hero-img img {
+
+/* .hero-img img {
     width: 100%;
     height: auto;
     display: block;
-}
+} */
 
 .hero-container {
     position: relative;
