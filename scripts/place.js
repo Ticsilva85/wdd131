@@ -1,8 +1,7 @@
 // === FOOTER === //
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-document.getElementById("lastModified").textContent =
-  `Last Modified: ${document.lastModified}`;
+document.getElementById("lastModified").textContent =`Last Modified: ${document.lastModified}`;
 
 // === WIND CHILL === //
 const temperature = 8;  // °C
