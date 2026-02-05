@@ -91,10 +91,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* .weather-header::after {
-    content: "🌦️"
-} */
-
 .weather-header h2::after {
   content: "";
   display: inline-block;
