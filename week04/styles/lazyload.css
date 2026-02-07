@@ -1,0 +1,25 @@
+main {
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+@keyframes fadeFromBlack {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
