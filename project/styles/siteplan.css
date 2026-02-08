@@ -1,4 +1,3 @@
-/* CSS HEX */
 :root{
     --powder-blue: #bdc8e2;
     --alabaster-grey: #dddfe4;
@@ -7,8 +6,12 @@
     --space-indigo: #292b3d;
 }
 
+* {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
 body {
-    font-family: Arial, sans-serif;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -28,7 +31,7 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
+/* === TABLE === */
 .table-wraper {
     display: flex;
     justify-content: center;
@@ -40,10 +43,10 @@ th, td {
     width: 25%;
 }
 td[class] {
-    height: 40px;
+    height: 25px;
 }
 
-table {
+.color-schema {
     width: 80%;
     table-layout: fixed;
     border-collapse: collapse;
@@ -69,6 +72,14 @@ table {
         background-color: var(--spicy-paprika);
     }
 
+}
+
+.noto-sans {
+    font-family: 'Noto Sans';
+}
+
+.onest {
+    font-family: 'Onest';
 }
 
 h2 {
