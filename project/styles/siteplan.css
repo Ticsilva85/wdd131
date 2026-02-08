@@ -57,24 +57,23 @@ td[class] {
     border: 1px solid #8b8b8b;
     text-align: center;
     font-size: .7rem;
-    
-    /* Preview Colors */
-    .alabaster-grey {
-        background-color: var(--alabaster-grey);
-    }
-    .powder-blue {
-        background-color: var(--powder-blue);
-    }
-    .space-indigo {
-        background-color: var(--space-indigo);
-    }
-    .dusty-grape {
-        background-color: var(--dusty-grape);
-    }
-    .spicy-paprika {
-        background-color: var(--spicy-paprika);
-    }
+}
 
+/* Preview Colors */
+.alabaster-grey {
+    background-color: var(--alabaster-grey);
+}
+.powder-blue {
+    background-color: var(--powder-blue);
+}
+.space-indigo {
+    background-color: var(--space-indigo);
+}
+.dusty-grape {
+    background-color: var(--dusty-grape);
+}
+.spicy-paprika {
+    background-color: var(--spicy-paprika);
 }
 
 /* Typography Table */
