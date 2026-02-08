@@ -42,6 +42,7 @@ th, td {
     padding: 10px;
     width: 25%;
 }
+
 td[class] {
     height: 25px;
 }
@@ -74,12 +75,32 @@ td[class] {
 
 }
 
+.typography-table {
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 1px solid #8b8b8b;
+    text-align: center;
+    font-size: .7rem;
+
+    th, td {
+    border: 1px solid #8b8b8b;
+    padding: 10px;
+    width: 25% 75%;
+    }
+
+    td[class] {
+        height: 25px;
+    }
+}
+
 .noto-sans {
     font-family: 'Noto Sans';
 }
 
 .onest {
-    font-family: 'Onest';
+    font-family: 'Onest' ;
 }
 
 h2 {
