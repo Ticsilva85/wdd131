@@ -1,3 +1,12 @@
+/* CSS HEX */
+:root{
+    --powder-blue: #bdc8e2;
+    --alabaster-grey: #dddfe4;
+    --dusty-grape: #565676;
+    --spicy-paprika: #cf5c36;
+    --space-indigo: #292b3d;
+}
+
 body {
     font-family: Arial, sans-serif;
     max-width: 900px;
@@ -17,6 +26,49 @@ section {
     margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.table-wraper {
+    display: flex;
+    justify-content: center;
+}
+
+th, td {
+    border: 1px solid #8b8b8b;
+    padding: 10px;
+    width: 25%;
+}
+td[class] {
+    height: 40px;
+}
+
+table {
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 1px solid #8b8b8b;
+    text-align: center;
+    font-size: .7rem;
+    
+    /* Preview Colors */
+    .alabaster-grey {
+        background-color: var(--alabaster-grey);
+    }
+    .powder-blue {
+        background-color: var(--powder-blue);
+    }
+    .space-indigo {
+        background-color: var(--space-indigo);
+    }
+    .dusty-grape {
+        background-color: var(--dusty-grape);
+    }
+    .spicy-paprika {
+        background-color: var(--spicy-paprika);
+    }
+
 }
 
 h2 {
