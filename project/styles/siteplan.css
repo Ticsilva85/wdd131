@@ -89,10 +89,12 @@ td[class] {
 
 .noto-sans {
     font-family: 'Noto Sans';
+    font-size: .8rem;
 }
 
-.onest {
-    font-family: 'Onest';
+.montserrat {
+    font-family: 'Montserrat Alternates';
+    font-size: .8rem;
 }
 
 h2 {
