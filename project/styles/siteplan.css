@@ -7,7 +7,7 @@
 }
 
 * {
-    font-family: 'Noto Sans', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     /* font-family: 'Times New Roman', Times, serif; */
 }
 
@@ -84,7 +84,7 @@ td[class] {
     margin: 20px auto;
     border: 1px solid #8b8b8b;
     text-align: center;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .noto-sans {
