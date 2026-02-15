@@ -10,8 +10,8 @@ body{
   max-width: 400px;
 }
 
-/* ===== Media Query (required by the audit) ===== */
-@media (min-width: 40rem) { /* 40rem ≈ 640px */
+/* ===== Media Query ===== */
+@media (min-width: 640px) { 
   form {
     padding: 24px;
   }
@@ -21,14 +21,14 @@ body{
   }
 
   .checks {
-    grid-template-columns: 22px 1fr 22px 1fr; /* 2 colunas de opções */
+    grid-template-columns: 22px 1fr 22px 1fr; 
   }
 }
 
 
 /* ===== HEADER / FOOTER ===== */
 header, footer{
-  background: #4b0307; /* roxo escuro */
+  background: #4b0307; /* dark red */
   color: #fff;
   text-align: center;
 }
@@ -70,7 +70,7 @@ main{
 
 form{
   width: min(520px, 100%);
-  background: #cfcad2; /* cinza/lilás */
+  background: #cfcad2; /* gray/lilac */
   padding: 18px;
   border-radius: 6px;
   border: 1px solid rgba(0,0,0,0.12);
