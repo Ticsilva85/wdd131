@@ -59,6 +59,7 @@ main{
   justify-content: center;
 }
 
+/* Main from review.html */
 .review-main {
   display: flex;
   flex-direction: column;
