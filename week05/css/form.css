@@ -59,6 +59,14 @@ main{
   justify-content: center;
 }
 
+.review-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
 form{
   width: min(520px, 100%);
   background: #cfcad2; /* cinza/lilás */
