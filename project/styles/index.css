@@ -1,0 +1,56 @@
+/* =========================
+   COLOR VARIABLES (LIGHT)
+========================= */
+
+:root{
+  --bg-color: #dddfe4;
+  --text-color: #292b3d;
+  --card-color: #bdc8e2;
+  --accent-color: #cf5c36;
+}
+
+/* Apply base styles */
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Noto Sans", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =========================
+   DARK MODE VARIABLES
+========================= */
+
+body.dark{
+  --bg-color: #292b3d;
+  --text-color: #dddfe4;
+  --card-color: #565676;
+  --accent-color: #cf5c36;
+}
+
+/* Header and main inherit background */
+header, main{
+  background-color: var(--bg-color);
+}
+
+/* Theme toggle button styling */
+#changeThemeSite {
+  background: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#changeThemeSite:hover{
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* Logo */
+.logo img {
+    width: 80px;
+}
+
