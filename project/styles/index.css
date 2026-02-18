@@ -269,7 +269,6 @@ body.dark .start-focus:hover, body.dark .start-focus-now:hover {
   padding-bottom: 6rem;
 }
 
-
 .cards > div {
   flex: 1; /* same space for all cards */
   background-color: var(--card-color);
@@ -293,4 +292,68 @@ body.dark .cards > div:hover {
   .cards{
     flex-direction: column;
   }
+}
+
+.main-bottom {
+  text-align: center;
+  max-width: 800px;      /* controla largura */
+  margin: 4rem auto;     /* centraliza horizontalmente */
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+.main-bottom h1 {
+  font-size: 3rem;
+}
+
+.main-bottom p {
+  font-size: 1.2rem;
+}
+
+.start-focus-now-2 {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.start-focus-now-2:hover{
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  color: var(--accent-color);
+  background-color: #ffffff;
+}
+
+body.dark .start-focus-now-2:hover {
+  border: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid var(--card-color);
+  margin-top: 6rem;
+}
+nav a img {
+  width: 30px;
+  height: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.footer-top div a p {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
