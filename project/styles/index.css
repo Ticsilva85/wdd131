@@ -1,20 +1,30 @@
+.page-container{
+  max-width: 1200px;
+  margin: 0 auto; /* centraliza */
+  padding: 0 1.5rem; /* espaço lateral */
+}
+
 /* =========================
    COLOR VARIABLES (LIGHT)
 ========================= */
 
 :root{
-  --bg-color: #dddfe4;
+  --bg-color: #ffffff;
   --text-color: #292b3d;
   --card-color: #bdc8e2;
   --accent-color: #cf5c36;
 }
 
+body:not(.dark) header{
+  background-color: #dddfe4;
+}
+
 /* Apply base styles */
-body{
+body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "Noto Sans", sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* =========================
@@ -23,14 +33,19 @@ body{
 
 body.dark{
   --bg-color: #292b3d;
-  --text-color: #dddfe4;
+  --text-color: #fff;
   --card-color: #565676;
   --accent-color: #cf5c36;
 }
 
+body.dark nav {
+  color: var(--text-color);
+}
+
 /* Header and main inherit background */
-header, main{
+main{
   background-color: var(--bg-color);
+  transition: background-color 0.4s ease;
 }
 
 /* Theme toggle button styling */
@@ -50,27 +65,43 @@ header, main{
 }
 
 nav a {
+  position: relative;
   text-decoration: none;
   font-weight: 500;
-  color: var(--text-color);
-  transition: color 0.3s ease;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 nav a:hover {
   color: var(--accent-color);
-}
-
-/* Logo */
-.logo img {
-    width: 80px;
+  text-shadow: 0 0 0.5px currentColor;
+  opacity: 1;
 }
 
 /* ===== HEADER ===== */
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 96%;
+  z-index: 1000;
+}
+
+body:not(.dark) header{
+  background-color: #dddfe4;
+}
+
+header nav a {
+  color: var(--text-color);
+  transition: color 0.4s ease;
 }
 
 /* Logo Area */
@@ -83,26 +114,17 @@ header{
 }
 
 .logo img {
-  width: 50px;
+  width: 60px;
   height: auto;
 }
 
 .logo h1 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin: 0;
 }
 
 /* Nav + Theme Button */
-nav {
-  display: flex;
-  align-items: center;
-}
-
-header > nav, header > button { 
-  margin-left: 1.5rem;
-}
-
 nav ul {
   display: flex;
   gap: 1.5rem;
@@ -111,9 +133,11 @@ nav ul {
   padding: 0;
 }
 
-nav a {
-  text-decoration: none;
-  font-weight: 500;
+.header-right{
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+  font-size: 1.2rem;
 }
 
 .start-focus {
@@ -125,19 +149,88 @@ nav a {
 }
 
 .start-focus:hover {
-  background-color: #fff;
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  color: var(--accent-color);
+  background-color: #ffffff;
+}
+
+.start-focus, .start-focus-now {
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark header nav a {
+  color: #ffffff;
+  opacity : 1;
+}
+
+body.dark header nav a:hover {
   color: var(--accent-color);
 }
 
 /* ===== MAIN ===== */
+main {
+  padding-top: 100px;
+}
+
+/* ===== Hero Top Layout ===== */
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  background-color: var(--bg-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  padding-bottom: 5rem;
+}
+
+/* Coluna esquerda */
+.hero-left {
+  flex: 1;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Coluna direita */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.start-focus-now{
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.start-focus-now:hover{
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  color: var(--accent-color);
+  background-color: #ffffff;
+}
+
+body.dark .start-focus:hover, body.dark .start-focus-now:hover {
+  border: none;
+}
 
 /* ===== Hero Caroussel ===== */
-.hero-carousel{
+.hero-carousel {
   position: relative;
-  width: 50%;
-  max-width: 100%;        /* optional */
+  width: 100%;
+  max-width: 560px;        /* size control for desktop */
   height: 360px;           /* adjust as you prefer */
-  margin: 1.5rem auto;     /* centers the hero */
+  /* margin: 1.5rem auto;     centers the hero */
+  margin: 0;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.4);
@@ -157,4 +250,47 @@ nav a {
 /* Only the active slide is visible */
 .hero-carousel .slide.is-active{
   opacity: 1;
+}
+
+.hero-carousel img {
+  display: block;
+}
+
+.hero-right, .caroussel {
+  width: 100%;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  font-size: large;
+  padding-bottom: 6rem;
+}
+
+
+.cards > div {
+  flex: 1; /* same space for all cards */
+  background-color: var(--card-color);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards > div:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+body.dark .cards > div:hover {
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px){
+  .cards{
+    flex-direction: column;
+  }
 }
