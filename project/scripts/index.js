@@ -74,3 +74,34 @@ if (carousel && slides.length > 0) {
   carousel.addEventListener("mouseenter", stopCarousel);
   carousel.addEventListener("mouseleave", startCarousel);
 }
+
+// ===== MOBILE MENU (HAMBURGER) =====
+const menuToggle = document.querySelector("#menuToggle");
+const mainNav = document.querySelector("#mainNav");
+
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    menuToggle.classList.toggle("is-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  // Close menu when a link is clicked (optional, but improves UX)
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      menuToggle.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  // Close menu when clicking outside of it
+  document.addEventListener("click", (e) => {
+    const clickedInside = menuToggle.contains(e.target) || mainNav.contains(e.target);
+    if (!clickedInside) {
+      mainNav.classList.remove("open");
+      menuToggle.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}

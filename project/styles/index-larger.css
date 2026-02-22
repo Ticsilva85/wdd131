@@ -1,0 +1,44 @@
+@media (min-width: 768px) {
+  /* Hides the hamburger menu on desktop */
+  .menu-toggle {
+    display: none !important;
+  }
+
+  /* Nav always visible */
+  header .header-right nav {
+    display: block !important;
+    position: static !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+
+  header .header-right nav ul {
+    flex-direction: row !important;
+    gap: 1rem !important;
+  }
+
+  header .header-right nav a {
+    padding: 0.25rem 0.5rem !important;
+  }
+
+    .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+  }
+
+  .footer-links ul li a {
+    text-decoration: none;
+  }
+
+  .footer-bottom{
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header .header-right nav a .start-focus{
+    padding: 0.5rem 1rem !important;
+    display: inline-block;
+  }
+}
