@@ -1,44 +1,147 @@
-@media (min-width: 768px) {
-  /* Hides the hamburger menu on desktop */
-  .menu-toggle {
-    display: none !important;
-  }
-
-  /* Nav always visible */
-  header .header-right nav {
-    display: block !important;
-    position: static !important;
-    padding: 0 !important;
-    border: 0 !important;
-  }
-
-  header .header-right nav ul {
-    flex-direction: row !important;
-    gap: 1rem !important;
-  }
-
-  header .header-right nav a {
-    padding: 0.25rem 0.5rem !important;
-  }
-
-    .footer-links ul{
-    list-style: none;
-    padding: 0;
-    margin:0;
-  }
-
-  .footer-links ul li a {
-    text-decoration: none;
-  }
-
-  .footer-bottom{
-    padding-bottom: 1rem;
-  }
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  header .header-right nav a .start-focus{
-    padding: 0.5rem 1rem !important;
-    display: inline-block;
-  }
+/* =========================
+   COLOR VARIABLES (LIGHT)
+========================= */
+
+:root{
+  --bg-color: #ffffff;
+  --text-color: #292b3d;
+  --card-color: #bdc8e2;
+  --accent-color: #cf5c36;
+}
+
+/* =========================
+   DARK MODE VARIABLES
+========================= */
+
+body.dark{
+  --bg-color: #292b3d;
+  --text-color: #fff;
+  --card-color: #565676;
+  --accent-color: #cf5c36;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Noto Sans', sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+/* =========================
+    HEADER
+========================= */
+
+/* Theme Toggle Button Styling */
+#changeThemeSite {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 0.5rem 0.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#changeThemeSite:hover {
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}
+
+/* Nav */
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    position: fixed; /* Make the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body:not(.dark) header {
+    background-color: #dddfe4;
+}
+
+/* Logo Area */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Nav + Theme Button */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.start-focus {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.start-focus:hover {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+    color: var(--accent-color);
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* =========================
+    MAIN
+========================= */
+
+main {
+    padding-top: 100px; /* Add padding to prevent content from being hidden behind the fixed header */
 }
