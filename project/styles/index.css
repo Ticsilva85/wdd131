@@ -1,0 +1,101 @@
+/* =========================
+   COLOR VARIABLES (LIGHT)
+========================= */
+
+:root{
+  --bg-color: #ffffff;
+  --text-color: #292b3d;
+  --card-color: #bdc8e2;
+  --accent-color: #cf5c36;
+}
+
+/* =========================
+   DARK MODE VARIABLES
+========================= */
+
+body.dark{
+  --bg-color: #292b3d;
+  --text-color: #fff;
+  --card-color: #565676;
+  --accent-color: #cf5c36;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Noto Sans', sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+@media (max-width: 767px) {
+    /* Logo Area */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .logo img {
+        width: 60px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    /* Nav + Theme Button */
+    nav ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .start-focus {
+        padding: 0.5rem 1rem;
+        background-color: var(--accent-color);
+        color: #ffffff;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+
+    .start-focus:hover {
+        outline: 2px solid var(--accent-color);
+        outline-offset: 2px;
+        color: var(--accent-color);
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+    }
+    
+
+    /* ===== HAMBURGER MENU (MOBILE) ===== */
+
+    /* Hidden Hamburger Button in Desktop */
+
+
+    
+    .menu-toggle {
+        display: none;
+        background: transparent;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-rigth {
+        gap: .75rem;
+
+    }
+}

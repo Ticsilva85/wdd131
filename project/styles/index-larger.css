@@ -82,7 +82,7 @@ header {
     position: fixed; /* Make the header fixed at the top */
     top: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     z-index: 1000;
 }
 
@@ -112,6 +112,7 @@ body:not(.dark) header {
 /* Nav + Theme Button */
 nav ul {
     display: flex;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -123,7 +124,7 @@ nav ul {
 }
 
 .start-focus {
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1rem;
     background-color: var(--accent-color);
     color: #ffffff;
     border-radius: 8px;
