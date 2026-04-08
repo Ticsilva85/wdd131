@@ -1,3 +1,12 @@
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box; /* Adjust header to fit in the screen */
+}
+
 /* =========================
    COLOR VARIABLES (LIGHT)
 ========================= */
@@ -30,72 +39,185 @@ body {
     font-family: 'Noto Sans', sans-serif;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
-@media (max-width: 767px) {
-    /* Logo Area */
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-        text-decoration: none;
-        color: var(--text-color);
-    }
-
-    .logo img {
-        width: 60px;
-        height: auto;
-    }
-
-    .logo h1 {
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-
-    /* Nav + Theme Button */
-    nav ul {
-        display: flex;
-        gap: 2rem;
-        list-style: none;
-    }
-
-    .header-right {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        font-size: 1.2rem;
-    }
-
-    .start-focus {
-        padding: 0.5rem 1rem;
-        background-color: var(--accent-color);
-        color: #ffffff;
-        border-radius: 8px;
-        font-weight: 700;
-    }
-
-    .start-focus:hover {
-        outline: 2px solid var(--accent-color);
-        outline-offset: 2px;
-        color: var(--accent-color);
-        background-color: #ffffff;
-        transition: all 0.3s ease;
-    }
-    
-
-    /* ===== HAMBURGER MENU (MOBILE) ===== */
-
-    /* Hidden Hamburger Button in Desktop */
 
 
-    
+/* =========================
+    HEADER
+========================= */
+
+/* Theme Toggle Button Styling */
+#changeThemeSite {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 0.5rem 0.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#changeThemeSite:hover {
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}
+
+/* Nav */
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    position: fixed; /* Make the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body:not(.dark) header {
+    background-color: #dddfe4;
+}
+
+/* Logo Area */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Nav + Theme Button */
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.start-focus {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.start-focus:hover {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+    color: var(--accent-color);
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* ===== HAMBURGER MENU (MOBILE) */
+
+/* Hidden hamburger buttonin desktop */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Three lines */
+.menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 0;
+    background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+@media(max-width: 767px) {
+    /* Shows hamburger button */
     .menu-toggle {
-        display: none;
-        background: transparent;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
     }
 
-    .header-rigth {
-        gap: .75rem;
-
+    /* Keeps header-right aligned */
+    .header-right {
+        gap: 0.75rem;
     }
+
+    /* Hide nav in mobile */
+    header .header-right nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-color);
+        padding: 0.75rem 1.25rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        z-index: 1001;
+    }
+
+    header .header-right nav.open {
+        display: block;
+    }
+
+    /* Menu in Column */
+    header .header-right nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    header .header-right nav a {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* =========================
+    MAIN
+========================= */
+
+main {
+    padding-top: 100px; /* Add padding to prevent content from being hidden behind the fixed header */
 }
