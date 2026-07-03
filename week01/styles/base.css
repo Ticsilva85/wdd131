@@ -1,0 +1,56 @@
+:root {
+    --heading-font: 'Lato', sans-serif;
+    --body-font: 'Lora', sans-serif;
+    --primary-color: #1f3b52;
+    --secondary-color: #245771;
+    --accent-color: #8ec8ef;
+    --heading-font: 'Lato', sans-serif;
+    --body-font: 'Lora', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.course-title {
+    display:inline-block;
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--body-font);
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: block;
+    padding: 15px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+main h1 {
+    text-align: center;
+    font-family: var(--heading-font);
+    padding: 1rem;
+}
