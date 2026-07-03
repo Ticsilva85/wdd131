@@ -34,21 +34,22 @@ header {
 }
 
 nav {
+    display: flex;
     background-color: var(--secondary-color);
-    margin: 0;
     grid-area: nav;
     width: 100%;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 nav a {
+    flex: 1;
     color: var(--font-color);
     text-decoration: none;
-    display:block;
-    padding: 15px 55px;
+    display: block;
+    padding: 15px;
     transition: background-color 0.5s ease;
+    text-align: center;
+    font-weight: bolder;
 }
 
 nav a:hover {
