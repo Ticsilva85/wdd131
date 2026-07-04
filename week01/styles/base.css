@@ -16,6 +16,7 @@
 
 body {
     font-family: var(--body-font);
+    height: 100vh;
 }
 
 .course-title {
@@ -66,6 +67,7 @@ main h1 {
 .card {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .card p {
@@ -76,7 +78,7 @@ main h1 {
 .cards-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .card h2 {
@@ -86,19 +88,12 @@ main h1 {
     color: white
 }
 
-.card h3 {
+.location-title {
     text-align: center;
     border-bottom: 1px solid lightgray;
     padding-bottom: 1rem;
-
-}
-
-.about {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    align-items: start;
+    width: 60%;
+    margin: 1rem auto;
 }
 
 .location {
@@ -127,8 +122,8 @@ main h1 {
 .about-text {
     display: grid;
     grid-template-columns: 1fr 200px;
-    gap:1.5 rem;
-    align-items: star;
+    gap: 1.5rem;
+    align-items: start;
 }
 
 .about-text figure {
@@ -148,4 +143,30 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources ul {
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center; 
+
+    list-style-position: inside;
+
+    gap: 0.5rem;
+
+    padding: 0;
+    margin: 0;
+}
+
+.resources li {
+    margin: .5rem 0;
 }
