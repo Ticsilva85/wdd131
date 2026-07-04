@@ -57,23 +57,15 @@ main {
     margin: 10px;
 }
 
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
 main h1 {
     text-align: center;
     font-family: var(--heading-font);
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .card {
     border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    font-size: smaller;
+    border-radius: 10px;
 }
 
 .card p {
@@ -81,17 +73,24 @@ main h1 {
     font-family: var(--body-font);
 }
 
-.card h2, .card h3 {
+.cards-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.card h2 {
     background-color: var(--primary-color);
     font-family: var(--heading-font);
     padding: 1rem;
     color: white
 }
 
-.cards-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+.card h3 {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1rem;
+
 }
 
 .about {
@@ -108,4 +107,45 @@ main h1 {
     gap: 1.5rem;
     padding: 1.5rem;
     align-items: center;
+}
+
+.location figure {
+    margin: 0;
+    justify-self: start;
+}
+
+.location img {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.location figcaption {
+    text-align: center;
+}
+
+.about-text {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap:1.5 rem;
+    align-items: star;
+}
+
+.about-text figure {
+    margin: 0;
+    justify-self: end;
+}
+
+.about-text img {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
