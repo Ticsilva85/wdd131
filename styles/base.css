@@ -143,18 +143,12 @@ main h1 {
 
 }
 
-footer {
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
 .resources {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: 100%;
+    padding-top: 30px;
 }
 
 .resources ul {
@@ -164,4 +158,22 @@ footer {
 
 .resources li {
     margin: .5rem 0;
+    padding: 1rem;
+}
+
+.resources a {
+    color: var(--primary-color);
+    font-family: var(--body-font);
+    transition: all 0.3s ease;
+}
+
+.resources a:hover {
+    color: red;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
