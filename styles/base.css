@@ -19,7 +19,7 @@ body {
     height: 100vh;
 }
 
-.course-title {
+#course-title {
     display:inline-block;
     font-family: var(--heading-font);
     background-color: var(--primary-color);
