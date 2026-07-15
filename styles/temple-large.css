@@ -6,11 +6,20 @@
     }
 
     nav ul {
+        display: flex;
         justify-content: flex-end;
         flex-direction: row;
     }
 
+    .navigation li {
+        display: block;
+    }
+
     nav a {
-        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
     }
 }
