@@ -5,6 +5,7 @@
     --heading-bg: #0E4B5F;
     --hover-color: #FE5F55;
     --active-color: #FFBC42;
+    --temple-hover: #4E9DD2;
 }
 
 * {
@@ -51,7 +52,7 @@ nav a {
     color: var(--body-bg)
 }
 
-nav a:hover {
+nav a:hover, nav a:active {
     color: var(--hover-color)
 }
 
@@ -62,6 +63,7 @@ nav a:hover {
 main {
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 main h1 {
@@ -79,7 +81,32 @@ main h1 {
 img {
     width: 100%;
     height: auto;
-    margin: rem;
+    padding: 1rem;
+}
+
+figure {
+    transition: box-shadow ease 0.5s;
+}
+
+figure:hover, figure:active {
+    box-shadow: 0 0 20px var(--temple-hover);
+}
+
+figcaption {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: var(--heading-bg);
+    padding: 2rem;
+    color: var(--body-bg);
+    text-align: center;
+}
+
+footer p {
+    padding: 5px;
 }
 
 
