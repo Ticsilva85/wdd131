@@ -130,7 +130,7 @@ footer p {
     font-weight:700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    color: var(--body-bg)
+    color: var(--body-bg);
 }
 
 #menu:before {
