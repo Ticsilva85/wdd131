@@ -5,3 +5,21 @@
     --heading-bg: #0E4B5F;
     --hover-color: #FE5F55;
 }
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: var(--heading-bg);
+    display: flex;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    padding: 10px;
+    font-size: 2vw;
+    color: white;
+}
+
