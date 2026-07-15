@@ -4,22 +4,82 @@
     --body-bg: #E7F4F0;
     --heading-bg: #0E4B5F;
     --hover-color: #FE5F55;
+    --active-color: #FFBC42;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--body-bg);
 }
 
 header {
     background-color: var(--heading-bg);
-    display: flex;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    margin: 0;
 }
 
 header h1 {
     font-family: var(--heading-font);
     padding: 10px;
-    font-size: 2vw;
+    font-size: 3rem;
     color: white;
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    color: var(--body-bg)
+}
+
+nav a:hover {
+    color: var(--hover-color)
+}
+
+.active {
+    color: var(--active-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: rem;
+}
+
 
