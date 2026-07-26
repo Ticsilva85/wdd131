@@ -1,0 +1,41 @@
+:root {
+    --body-font: "Murecho", sans-serif;
+    --heading-font: "Merriweather", sans-serif;
+    --primary-color: #0B6E99;
+    --secondary-color: #5E8C61;
+    --background-color: #E8D7A7;
+    --accent-color: #C96A3D;
+    --text-color: #2B2B2B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 5vw;
+    border-bottom: 20px solid var(--secondary-color);
+}
+
+
+footer {
+    background-color: var(--heading-bg);
+    padding: 2rem;
+    color: var(--body-bg);
+    text-align: center;
+
+}
+
+footer p {
+    padding: 5px;
+}

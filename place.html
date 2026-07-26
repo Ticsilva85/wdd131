@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Murecho:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,20 +20,79 @@
 
     <main>
         <picture>
-            <source srcset="" media="">
-            <source srcset="" media="">
-            <img src="" alt="" width="" height="">
+            <source srcset="images/place/wallabies-large.webp" media="(min-width: 1200px)">
+            <source srcset="images/place/quokka-medium.webp" media="(min-width: 800px)">
+            <img src="images/place/wombats-small.webp" alt="Australian Wallaby" width="400">
         </picture>
 
         <section>
             <div>
-
+                <table>
+                    <caption>Data</caption>
+                    <tbody>
+                        <tr>
+                            <th>Area:</th>
+                            <td>7,692,024 km²</td>
+                        </tr>
+                        <tr>
+                            <th>Population:</th>
+                            <td>27.3 million (approx.)</td>
+                        </tr>
+                        <tr>
+                            <th>Capital:</th>
+                            <td>Canberra</td>
+                        </tr>
+                        <tr>
+                            <th>Languages:</th>
+                            <td>English (de facto)</td>
+                        </tr>
+                        <tr>
+                            <th>Currency:</th>
+                            <td>Australian Dollar (AUD)</td>
+                        </tr>
+                        <tr>
+                            <th>Time Zone:</th>
+                            <td>UTC+8 to UTC+11</td>
+                        </tr>
+                        <tr>
+                            <th>Calling Code:</th>
+                            <td>+61</td>
+                        </tr>
+                        <tr>
+                            <th>Internet TLD:</th>
+                            <td>.au</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <section>
             <div>
-
+                <table>
+                    <div class="weather-table">
+                        <caption>Weather</caption>
+                        <img src="images/place/weather-icon.svg" alt="Weather Icon" width="40px">
+                    </div>
+                    <tbody>
+                        <tr>
+                            <th>Temperature:</th>
+                            <td>#</td>
+                        </tr>
+                        <tr>
+                            <th>Conditions:</th>
+                            <td>#</td>
+                        </tr>
+                        <tr>
+                            <th>Wind:</th>
+                            <td>#</td>
+                        </tr>
+                        <tr>
+                            <th>Wind Chill:</th>
+                            <td>#</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
