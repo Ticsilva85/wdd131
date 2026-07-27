@@ -15,8 +15,10 @@
 
 body {
     font-family: var(--body-font);
-    background-color: var(--background-color);
+    background-color: aliceblue;
 }
+
+/* ===== HEADER ===== */
 
 h1 {
     background-color: var(--primary-color);
@@ -27,6 +29,7 @@ h1 {
     border-bottom: 20px solid var(--secondary-color);
 }
 
+/* ===== MAIN ===== */
 .hero {
     border-bottom: 10px solid var(--accent-color);
 }
@@ -36,11 +39,30 @@ main {
 }
 
 /* ===== TABLES ===== */
-caption {
-    font-weight: bold;
-    font-size: 1.5rem;
+
+.data, .weather {
+    background-color: var(--background-color);
+    width: 400px;
+    padding: .8rem;
+    margin-bottom: 2rem;
 }
 
+h2 {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.weather-title {
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: center;
+}
+
+/* ===== FOOTER ===== */
 
 footer {
     background-color: var(--primary-color);
