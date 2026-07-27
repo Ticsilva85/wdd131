@@ -35,6 +35,14 @@
         bottom: 30px;
         right: 30px;
     }
+
+    .weather-title h2::after {
+        content: "";
+    }
+
+    .weather-icon {
+        display: inline-block;
+    }
 }
 
 @media (min-width: 800px) {
@@ -68,5 +76,13 @@
         position: absolute;
         bottom: 30px;
         right: 80px;
+    }
+
+    .weather-title h2::after {
+        content: "";
+    }
+
+    .weather-icon {
+        display: inline-block;
     }
 }

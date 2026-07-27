@@ -63,6 +63,14 @@ h2 {
     justify-content: center;
 }
 
+.weather-icon {
+    display: none;
+}
+
+.weather-title h2::after {
+    content: " ⛅";
+}
+
 /* ===== FOOTER ===== */
 
 footer {
