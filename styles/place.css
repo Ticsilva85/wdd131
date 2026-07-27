@@ -43,7 +43,7 @@ h1 {
 .data, .weather {
     background-color: var(--background-color);
     width: 100%;
-    box-sizing: brder-box;
+    box-sizing: border-box;
     padding: .8rem;
     margin-bottom: 2rem;
 }
