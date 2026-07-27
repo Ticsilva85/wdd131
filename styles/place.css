@@ -31,18 +31,19 @@ h1 {
 
 /* ===== MAIN ===== */
 .hero {
+    width: 100%;
+    height: auto;
+    display: block;
     border-bottom: 10px solid var(--accent-color);
-}
-
-main {
-    align-items: center;
+    margin-bottom: 1rem;
 }
 
 /* ===== TABLES ===== */
 
 .data, .weather {
     background-color: var(--background-color);
-    width: 400px;
+    width: 100%;
+    box-sizing: brder-box;
     padding: .8rem;
     margin-bottom: 2rem;
 }
