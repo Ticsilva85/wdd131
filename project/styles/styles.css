@@ -68,6 +68,11 @@ figure {
     padding: 20px;
 }
 
+figure img {
+    max-width: 70%;
+    height: auto;
+}
+
 figcaption {
     font-size: 0.8rem;
 }
