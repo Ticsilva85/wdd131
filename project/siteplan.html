@@ -6,36 +6,22 @@
     <title>Week 05 | Project - Website Planning Document – Study Planner</title>
     <meta name="description" content="StudyHub is a web application that helps users manage their tasks and stay focused.">
     <meta name="author" content="Tiago Cavalcante da Silva">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-large.css">
-    <script src="project.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <script src="scripts/project.js" defer></script>
 <body>
-    <header>
+    <header id="header">
         <h1>Website Planning Document – Study Planner</h1>
-
-        <nav>
-            <ul>
-                <li><a href="site-name">Site Name</a></li>
-                <li><a href="site-purpose">Site Purpose</a></li>
-                <li><a href="scenarios">Scenarios</a></li>
-                <li><a href="color-schema">Color Schema</a></li>
-                li><a href="typography">Typography</a></li>
-                <li><a href="wireframes">Wireframes</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <div class="site-name">
-            <h2>Site Name</h2>
-            <p>The name clearly describes the purpose of the website. It is simple, easy to remember, and immediately tells users that the application is designed to help them organize and manage their study schedule.</p>
-        </div>
-        <div class="site-purpose">
-            <h2>Site Purpose</h2>
-            <p>Study Planner is a responsive web application that helps students organize their study sessions, manage tasks, and track their learning progress. Users can create study tasks, assign priorities, mark them as completed, and monitor their overall progress through a simple and intuitive interface.</p>
-        </div>
-        <div class="scenarios">
-            <h2>Scenarios</h2>
+        <h2>Site Name</h2>
+        <p>The name clearly describes the purpose of the website. It is simple, easy to remember, and immediately tells users that the application is designed to help them organize and manage their study schedule.</p>
+        <h2>Site Purpose</h2>
+        <p>Study Planner is a responsive web application that helps students organize their study sessions, manage tasks, and track their learning progress. Users can create study tasks, assign priorities, mark them as completed, and monitor their overall progress through a simple and intuitive interface.</p>
+
+        <h2>Scenarios</h2>
+        <div class="scenario">
             <h3>Scenario 1</h3>
             <p>A college student wants to organize their weekly study schedule before exams.</p>
             <ul>
@@ -45,79 +31,86 @@
 
             <h3>Scenario 2</h3>
             <p>A student wants to monitor their productivity throughout the week.</p>
-            <ul></ul>
+            <ul>
                 <li>How many study tasks have I completed?</li>
                 <li>What study sessions are still pending?</li>
             </ul>
         </div>
-        <div class="color-schema">
-            <h2>Color Schema</h2>
-            <table>
-                <tr>
-                    <th colspan="2">Color</th>
-                    <th>Hex Code</th>
-                    <th>Purpose</th>
-                </tr>
-                <tr>
-                    <td>Dark Blue</td>
-                    <td class="dark-blue"></td>
-                    <td>#2E4057</td>
-                    <td>Header, navigation, headings</td>
-                </tr>
-                <tr>
-                    <td>Orange</td>
-                    <td class="orange"></td>
-                    <td>#F18F01</td>
-                    <td>Buttons, highlights, progress indicators</td>
-                </tr>
-                <tr>
-                    <td>Light Gray</td>
-                    <td class="light-gray"></td>
-                    <td>#F4F4F4</td>
-                    <td>Page background</td>
-                </tr>
-                <tr>
-                    <td>White</td>
-                    <td class="white"></td>
-                    <td>#FFFFFF</td>
-                    <td>Cards and content areas</td>
-                </tr>
-                <tr>
-                    <td>Dark Gray</td>
-                    <td class="dark-gray"></td>
-                    <td>#333333</td>
-                    <td>Body text</td>
-                </tr>
-            </table>
-        </div>
-        <div class="typography">
-            <h2>Typography</h2>
-            <table>
-                <tr>
-                    <th>Font</th>
-                    <th>Purpose</th>
-                </tr>
-                <tr>
-                    <td>Poppins, sans-serif</td>
-                    <td>Used for navigation, headings and titles to provide a modern and clean look.</td>
-                </tr>
-                <tr>
-                    <td>Roboto, sans-serif</td>
-                    <td>Used for body text to ensure readability and a comfortable reading experience, including: paragraphs, lists, and form labels</td>
 
-                </tr>
-            </table>
-        </div>
-        <div class="wireframes">
+        <h2>Color Schema</h2>
+        <table>
+            <tr>
+                <th colspan="2">Color</th>
+                <th>Hex Code</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>Dark Blue</td>
+                <td class="dark-blue"></td>
+                <td>#2E4057</td>
+                <td>Header, navigation, headings</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td class="orange"></td>
+                <td>#F18F01</td>
+                <td>Buttons, highlights, progress indicators</td>
+            </tr>
+            <tr>
+                <td>Light Gray</td>
+                <td class="light-gray"></td>
+                <td>#F4F4F4</td>
+                <td>Page background</td>
+            </tr>
+            <tr>
+                <td>White</td>
+                <td class="white"></td>
+                <td>#FFFFFF</td>
+                <td>Cards and content areas</td>
+            </tr>
+            <tr>
+                <td>Dark Gray</td>
+                <td class="dark-gray"></td>
+                <td>#333333</td>
+                <td>Body text</td>
+            </tr>
+        </table>
+
+        <h2>Typography</h2>
+        <table>
+            <tr>
+                <th>Font</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>Poppins, sans-serif</td>
+                <td>Used for navigation, headings and titles to provide a modern and clean look.</td>
+            </tr>
+            <tr>
+                <td>Roboto, sans-serif</td>
+                <td>Used for body text to ensure readability and a comfortable reading experience, including: paragraphs, lists, and form labels</td>
+
+            </tr>
+        </table>
+        <div id="wireframes">
             <h2>Wireframes</h2>
-            <p></p>
+            <figure>
+                <img src="images/wireframe1.png" alt="Wireframe de home page" width="700px">
+                <figcaption>Opening homepage's wireframe</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wireframe2.png" alt="Wireframe de home page" width="700px">
+                <figcaption>User utilization's wireframe</figcaption>
+            </figure>
         </div>
 
 
     </main>
 
     <footer>
-
+        <p>&copy;<span id="currentyear"></span> 💻 Tiago Cavalcante da Silva 💻 Brazil</p>
+        <p id="lastModified"></p>
     </footer>
+
 </body>
 </html>

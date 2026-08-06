@@ -1,0 +1,80 @@
+* {
+    --primary-color: #2E4057;
+    --secondary-color: #5f72a7;
+    --accent-color: #F18F01;
+    --background-color: #efeeee;
+    --card-content-color: #FFFFFF;
+    --body-text-color: #333333;
+    --heading-font: 'poppins', sans-serif;
+    --body-font: 'roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    background-color: white;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--card-content-color);
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    color: var(--card-content-color);
+}
+p {
+    padding: 10px;
+}
+
+.scenario {
+    padding-left: 10px;
+}
+
+table {
+    border-collapse: collapse;    
+    margin-left: 10px;
+}
+
+table th, table td {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+table .dark-blue {
+    background-color: var(--primary-color);
+    width: 50px;
+    border: 1px solid white;
+}
+
+ table .orange {
+    background-color: var(--accent-color);
+ } 
+ 
+ table .light-gray {
+    background-color: var(--background-color);
+ } 
+ 
+ table .dark-gray {
+    background-color: var(--body-text-color);
+}
+
+figure {
+    padding: 20px;
+}
+
+figcaption {
+    font-size: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.8rem;
+}
