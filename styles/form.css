@@ -17,8 +17,9 @@ body {
 h1 {
     width: 35%;
     margin: 2rem auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--primary-color);
-    padding: 1rem;
     text-align: center;
     color: white;
 }
@@ -29,7 +30,6 @@ form {
     width: 35%;
     margin: 2rem auto;
     background-color: var(--background-color);
-    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -133,8 +133,10 @@ label span {
 footer {
     background-color: var(--primary-color);
     text-align: center;
-    padding: 1rem;
     color: white;
     width: 35%;
     margin: 2rem auto;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
