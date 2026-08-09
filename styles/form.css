@@ -27,7 +27,7 @@ fieldset {
     gap: 1rem;
 }
 
-fieldset div {
+fieldset > div {
     display: flex;
     flex-direction: column;
 }
@@ -44,6 +44,34 @@ label {
 #installation-date {
     padding: 0.5rem;
     border: none;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.rating > label{
+    margin-bottom: 0.3rem;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-option label {
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-bottom: 0.3rem;
+}
+
+.rating-option input {
+    width: auto;
 }
 
 .form-title {
