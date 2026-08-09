@@ -1,0 +1,53 @@
+* {
+    --primary-color: #6B9080;
+    --secondary-color: #A4C3B2;
+    --background-color: #CCE3DE;
+    --button-color: #CCE3DE;
+    --accent-color: #E6E9D2;
+    --font-color: #1A2721;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+form {
+    width: 35%;
+    margin: 2rem auto;
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.3rem;
+}
+
+#product {
+    padding: 0.5rem;
+    border: none;
+}
+
+#installation-date {
+    padding: 0.5rem;
+    border: none;
+}
+
+.form-title {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
