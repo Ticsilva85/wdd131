@@ -21,6 +21,12 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.form-title {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
 fieldset {
     display:flex;
     flex-direction: column;
@@ -36,12 +42,7 @@ label {
     margin-bottom: 0.3rem;
 }
 
-#product {
-    padding: 0.5rem;
-    border: none;
-}
-
-#installation-date {
+#product, #installation-date, #comments, #yourname {
     padding: 0.5rem;
     border: none;
 }
@@ -74,8 +75,34 @@ label {
     width: auto;
 }
 
-.form-title {
+label span {
+    font-size: 0.7rem;
+    color: blue;
+}
+
+
+/* === Post Review Button === */
+.button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
     background-color: var(--primary-color);
-    padding: 1rem;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+
+/* === Footer === */
+footer {
+    background-color: var(--primary-color);
     text-align: center;
+    padding: 1rem;
+    color: white;
+    width: 35%;
+    margin: 2rem auto;
 }
