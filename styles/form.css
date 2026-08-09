@@ -7,14 +7,24 @@
     --font-color: #1A2721;
 }
 
+html, body {
+    min-height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+main {
+    flex: 1;
 }
 
 /* === HEADER === */
 
-h1 {
+.product-review {
     width: 35%;
     margin: 2rem auto;
     padding-top: 1rem;
@@ -139,4 +149,35 @@ footer {
 
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+}
+
+/* === REVIEW PAGE === */
+h1 {
+    width: 35%;
+    margin: 2rem auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+}
+
+.review-form {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height:200px;
+}
+
+.review-form > p {
+    padding-bottom: 3rem;;
+}
+
+#resetButton {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    color: white;
+
 }
