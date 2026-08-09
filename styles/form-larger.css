@@ -1,13 +1,9 @@
 @media (max-width: 600px) {
-    h1 {
-        width: 90%;
-    }
 
-    form {
-        width: 90%;
-    }
-
-    footer{
+    .product-review,
+    form,
+    .review-form,
+    footer {
         width: 90%;
     }
 }
