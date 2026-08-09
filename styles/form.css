@@ -75,6 +75,30 @@ label {
     width: auto;
 }
 
+/* === Checkbox Features ==== */
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feature-option input {
+    order: 1;
+    width: 20px;
+    height: 20px;
+}
+
+.feature-option label {
+    order: 2;
+    margin-bottom: 0;
+    text-align: right;
+}
+
 label span {
     font-size: 0.7rem;
     color: blue;
