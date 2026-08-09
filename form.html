@@ -19,84 +19,84 @@
 
         <form method="get" action="review.html">
             <fieldset>
-            <div>
-                <label for="product">Product Name</label>
-                <select name="product" id="product" required>
-                    <option value="" disabled selected>Select a Product...</option>
-                </select>
-            </div>
-
-            <div class="rating-container">
-                <label>Overall Rating</label>
-
-                <div class="rating">
-                    <div class="rating-option">
-                        <label for="onestar">★</label>
-                        <input type="radio" id="onestar" name="stars" value="1" required>
-                    </div>
-
-                    <div class="rating-option">
-                        <label for="twostar">★★</label>
-                        <input type="radio" id="twostar" name="stars" value="2" required>
-                    </div>
-
-                    <div class="rating-option">
-                        <label for="threestar">★★★</label>
-                        <input type="radio" id="threestar" name="stars" value="3" required>
-                    </div>
-
-                    <div class="rating-option">
-                        <label for="fourstar">★★★★</label>
-                        <input type="radio" id="fourstar" name="stars" value="4" required>
-                    </div>
-
-                    <div class="rating-option">
-                        <label for="fivestar">★★★★★</label>
-                        <input type="radio" id="fivestar" name="stars" value="5" required>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <label for="installation-date">Date of installation</label>
-                <input type="date" name="installation-date" id="installation-date" required>
-            </div>
-
-            <fieldset class="features">
-                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
-
-                <div class="feature-option">
-                    <label for="durability">Durability</label>
-                    <input type="checkbox" id="durability" name="features" value="durability">
-                </div>
-                
-                <div class="feature-option">
-                    <label for="ease-of-use">Ease of Use</label>
-                    <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                <div>
+                    <label for="product">Product Name</label>
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
                 </div>
 
-                <div class="feature-option">
-                    <label for="performance">Performance</label>    
-                    <input type="checkbox" id="performance" name="features" value="performance">
+                <div class="rating-container">
+                    <label>Overall Rating</label>
+
+                    <div class="rating">
+                        <div class="rating-option">
+                            <label for="onestar">★</label>
+                            <input type="radio" id="onestar" name="stars" value="1" required>
+                        </div>
+
+                        <div class="rating-option">
+                            <label for="twostar">★★</label>
+                            <input type="radio" id="twostar" name="stars" value="2" required>
+                        </div>
+
+                        <div class="rating-option">
+                            <label for="threestar">★★★</label>
+                            <input type="radio" id="threestar" name="stars" value="3" required>
+                        </div>
+
+                        <div class="rating-option">
+                            <label for="fourstar">★★★★</label>
+                            <input type="radio" id="fourstar" name="stars" value="4" required>
+                        </div>
+
+                        <div class="rating-option">
+                            <label for="fivestar">★★★★★</label>
+                            <input type="radio" id="fivestar" name="stars" value="5" required>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="feature-option">
-                    <label for="design">Design</label>
-                    <input type="checkbox" id="design" name="features" value="design">
+
+                <div>
+                    <label for="installation-date">Date of installation</label>
+                    <input type="date" name="installation-date" id="installation-date" required>
                 </div>
-            </fieldset>
 
-            <div>
-                <label for="comments">Written Review<span>(Optional)</span></label>
-                <textarea name="comments" id="comments" rows="5" cols="30" placeholder="Enter your comments here..."></textarea>
-            </div>
+                <fieldset class="features">
+                    <legend>Which features did you find useful in the product? (Check all that apply)</legend>
 
-            <div>
-                <label for="yourname">Your Name<span>(Optional)</span></label>
-                <input type="text" name="yourname" id="yourname">
-            </div>
+                    <div class="feature-option">
+                        <label for="durability">Durability</label>
+                        <input type="checkbox" id="durability" name="features" value="durability">
+                    </div>
+                    
+                    <div class="feature-option">
+                        <label for="ease-of-use">Ease of Use</label>
+                        <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                    </div>
 
-            <input class="button" type="submit" value="Post Review">
+                    <div class="feature-option">
+                        <label for="performance">Performance</label>    
+                        <input type="checkbox" id="performance" name="features" value="performance">
+                    </div>
+                    
+                    <div class="feature-option">
+                        <label for="design">Design</label>
+                        <input type="checkbox" id="design" name="features" value="design">
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="comments">Written Review<span>(Optional)</span></label>
+                    <textarea name="comments" id="comments" rows="5" cols="30" placeholder="Enter your comments here..."></textarea>
+                </div>
+
+                <div>
+                    <label for="yourname">Your Name<span>(Optional)</span></label>
+                    <input type="text" name="yourname" id="yourname">
+                </div>
+
+                <input class="button" type="submit" value="Post Review">
             </fieldset>
         </form>
     </main>
