@@ -11,11 +11,14 @@
     <meta name="author" content="Tiago Cavalcante da Silva">
 </head>
 <body>
+
+    <header>
+        <h1>Product Review</h1> 
+    </header>
+
     <main>
 
         <form method="get" action="review.html">
-            <h1 class="form-title">Product Review</h1> 
-
             <fieldset>
             <div>
                 <label for="product">Product Name</label>
@@ -35,22 +38,22 @@
 
                     <div class="rating-option">
                         <label for="twostar">★★</label>
-                        <input type="radio" id="twostar" name="stars" value="2">
+                        <input type="radio" id="twostar" name="stars" value="2" required>
                     </div>
 
                     <div class="rating-option">
                         <label for="threestar">★★★</label>
-                        <input type="radio" id="threestar" name="stars" value="3">
+                        <input type="radio" id="threestar" name="stars" value="3" required>
                     </div>
 
                     <div class="rating-option">
                         <label for="fourstar">★★★★</label>
-                        <input type="radio" id="fourstar" name="stars" value="4">
+                        <input type="radio" id="fourstar" name="stars" value="4" required>
                     </div>
 
                     <div class="rating-option">
                         <label for="fivestar">★★★★★</label>
-                        <input type="radio" id="fivestar" name="stars" value="5">
+                        <input type="radio" id="fivestar" name="stars" value="5" required>
                     </div>
                 </div>
             </div>

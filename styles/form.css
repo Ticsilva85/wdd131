@@ -12,6 +12,18 @@ body {
 
 }
 
+/* === HEADER === */
+
+h1 {
+    width: 35%;
+    margin: 2rem auto;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* === FORM === */
+
 form {
     width: 35%;
     margin: 2rem auto;
@@ -19,12 +31,6 @@ form {
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-title {
-    background-color: var(--primary-color);
-    padding: 1rem;
-    text-align: center;
 }
 
 fieldset {
