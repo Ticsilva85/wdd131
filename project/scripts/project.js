@@ -7,3 +7,12 @@
 // lastModified.innerHTML = document.lastModified;
 
 document.querySelector("#currentyear").textContent = new Date().getFullYear();
+
+// === HAMBURGER MENU ===
+const mainnav = document.querySelector('.header-nav');
+const hambutton = document.querySelector('#menu');
+
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show'); 
+    hambutton.classList.toggle('show');
+});

@@ -1,0 +1,33 @@
+@media (min-width: 740px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-nav {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}

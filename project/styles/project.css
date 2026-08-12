@@ -18,15 +18,91 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 header > h1 {
     font-family: var(--header-font);
     color:white;
-    font-size: 4rem;
+    font-size: 2rem;
+    width: 50%;
+    position: relative;
 }
 
 .logo {
-    width: 6vw;
+    width: 20vw;
     padding:20px;
+}
+
+.header-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 180px;
+    background-color: var(--primary-color);
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+
+}
+
+.header-nav.show {
+    opacity: 1;
+    visibility:visible;
+    transform: translateY(0);
+}
+
+.header-nav li {
+    display: block;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav.show li {
+    display: block;
+}
+
+.header-nav a {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    color: var(--background-color)
+}
+
+.header-nav a:hover, .header-nav a:active {
+    color: var(--accent-color);
+}
+
+#menu {
+    display: block;
+    margin-left: auto;
+    margin-right: 3rem;
+    font-size: 2rem;
+    font-weight:700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    color: var(--body-bg);
+}
+
+#menu:before {
+    content: "≡";
+    color: var(--background-color);
+}
+
+#menu.show::before {
+    content: "✕"
 }
