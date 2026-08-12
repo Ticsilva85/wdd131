@@ -87,7 +87,7 @@ header > h1 {
 
 .header-nav a:hover, .header-nav a:active {
     color: white;
-    background-color: var(--accent-color);
+    background-color: #374b66;
     border-radius: 5px;
 }
 

@@ -54,12 +54,17 @@
     }
 
     .start-now {
-        background-color: #8695A6;
         border-radius: 5px;
     }
 
     .start-now > a {
-        color: #2E4057;
+        font-weight: bold;
+        background-color: #F18F01;
+        border-radius: 5px;
+    }
+
+    .start-now > a:hover {
+        background-color: rgba(242, 85, 0, 0.978);
     }
 
     #menu {
