@@ -70,4 +70,20 @@
     #menu {
         display: none;
     }
+
+    /* === HOLY GRAIL DESIGN === */
+    .holy-grail {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .carousel {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
