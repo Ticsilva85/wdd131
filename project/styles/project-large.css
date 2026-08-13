@@ -135,36 +135,33 @@
         width: auto;
         opacity: 1 !important;
         transition: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .text-slide h3 {
         text-align: center;
         font-size: 1.5rem;
+        width: 100%;
+        margin: 0 0 1rem;
     }
 
     .text-slide p {
         width: 90%;
         text-align: center;
-        margin: 0;
+        margin: 0 auto;
     }
 
     /* === FOOTER === */
-    footer > div {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .footer-col {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
 
-    .footer-nav ul {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
-
-    footer {
-        text-align: left;
-    }
-
-    .footer-info {
-        text-align: center;
+    .footer-brand {
+        display: flex;
+        
     }
 }
