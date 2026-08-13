@@ -159,13 +159,15 @@ p {
 }
 
 
-/* === Carousel === */
+/* === Image Carousel === */
 
 .carousel {
     width: 100%;
     height: 500px;
     overflow: hidden;
     position: relative;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
 }
 
 .carousel-track {
@@ -191,6 +193,96 @@ p {
 .carousel-track img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
+
+}
+
+/* === Text Carousel === */
+
+
+
+.text-carousel {
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.text-carousel-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.text-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.text-slide:first-child {
+    opacity: 1;
+}
+
+.text-slide h3 {
+    text-align: center;
+}
+
+.text-slide p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* === FOOTER === */
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem 1rem;
+    color: white;
+    text-align: center;
+}
+
+.footer-brand h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+.footer-brand p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.footer-info {
+    text-align: center;
 }
