@@ -80,14 +80,14 @@ header > h1 {
     text-align: center;
     padding: 0.8rem;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
     color: var(--background-color)
 }
 
 .header-nav a:hover, .header-nav a:active {
     color: white;
-    background-color: #374b66;
+    background-color: #364b65;
     border-radius: 5px;
 }
 
@@ -113,4 +113,84 @@ header > h1 {
     content: "✕";
     font-size: 2rem;
     font-weight: bold;
+}
+
+/* === MAIN === */
+.left-side {
+    text-align: center;
+    padding: 1rem;
+}
+
+.left-side h2,
+.left-side p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    width: 60%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.left-side a {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin-bottom: 50px;;
+}
+
+.start-btn {
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+    color: var(--background-color);
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+
+/* === Carousel === */
+
+.carousel {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-track picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-track picture:first-child {
+    opacity: 1;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }

@@ -1,10 +1,3 @@
-// const today = new Date();
-// const currentyear = document.querySelector("#currentyear");
-
-// currentyear.innerHTML = `<span id="currentyear">${today.getFullYear()}</span>`;
-
-// const lastModified = document.getElementById("lastModified");
-// lastModified.innerHTML = document.lastModified;
 
 document.querySelector("#currentyear").textContent = new Date().getFullYear();
 
@@ -16,3 +9,23 @@ hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show'); 
     hambutton.classList.toggle('show');
 });
+
+// === CAROUSEL ===
+
+const carouselImages = document.querySelectorAll(".carousel-track picture");
+
+let currentSlide = 0;
+
+function nextSlide() {
+    carouselImages[currentSlide].style.opacity = "0";
+
+    currentSlide++;
+
+    if (currentSlide >= carouselImages.length) {
+        currentSlide = 0;
+    }
+
+    carouselImages[currentSlide].style.opacity = "1";
+}
+
+setInterval(nextSlide, 4000);
