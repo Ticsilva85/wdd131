@@ -82,7 +82,7 @@ header > h1 {
     text-decoration: none;
     font-size: 1.5rem;
     transition: color 0.3s ease;
-    color: var(--background-color)
+    color: var(--background-color);
 }
 
 .header-nav a:hover, .header-nav a:active {
@@ -168,6 +168,7 @@ p {
     position: relative;
     box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .carousel-track {

@@ -1,3 +1,12 @@
+* {
+    --primary-color: #2E4057;
+    --bghover-color: #8695A6;
+    --accent-color: #F18F01;
+    --background-color: #F4F4F4;
+    --font-color: #333333;
+    --header-font: "Bricolage Grotesque", sans-serif;
+}
+
 @media (min-width: 768px) {
     .logo {
         width: 4vw;
@@ -64,10 +73,12 @@
         font-weight: bold;
         background-color: #F18F01;
         border-radius: 5px;
+        color: var(--primary-color);
     }
 
     .start-now > a:hover {
         background-color: rgba(242, 85, 0, 0.978);
+        color: white;
     }
 
     #menu {
@@ -76,7 +87,6 @@
 
     /* === MAIN === */
 
-
     .holy-grail {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -84,6 +94,12 @@
 
         margin: 0 auto;
         padding: 2rem;
+    }
+
+    .start-btn {
+        color: var(--primary-color);
+        font-weight: bold;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
     }
 
     /* === Carousel === */
@@ -96,6 +112,40 @@
     .carousel-track {
         width: 100%;
         height: 100%;
+    }
+
+    /* === Text Carousel === */
+    .text-carousel {
+        width: 90%;
+        margin: 0 auto 100px;
+        overflow: visible;
+    }
+
+    .text-carousel-track {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .text-slide {
+        position: static;
+        width: auto;
+        opacity: 1 !important;
+        transition: none;
+    }
+
+    .text-slide h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .text-slide p {
+        width: 90%;
+        text-align: center;
+        margin: 0;
     }
 
     /* === FOOTER === */
