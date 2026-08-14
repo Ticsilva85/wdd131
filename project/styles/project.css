@@ -288,8 +288,9 @@ p {
 }
 
 .profile p {
+    width: 90%;
     line-height: 1.6;
-    margin-left: 20px;
+    margin: 0 auto 2rem;
 }
 
 /* ***** STARTNOW.HTML ***** */
