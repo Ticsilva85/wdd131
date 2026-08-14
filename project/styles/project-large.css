@@ -10,7 +10,7 @@
 @media (min-width: 1025px) {
     body {
     margin: 0;
-    background-color: white;
+    background-color: var(--background-color);
 
     min-height: 100vh;
     display: flex;
@@ -105,7 +105,7 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        background-color: var(--background-color);
+        background-color: white;
         flex: 1;
     }
 
@@ -186,7 +186,13 @@
 
     /* ***** ABOUTUS.HTML ***** */
     .profile img {
-        width: 230px;
+        float: right;
+        width: 200px;
+        height: auto;
+        margin: 0 0 1rem 2rem;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        margin-right: 5rem;
     }
 
     /* === FOOTER === */
