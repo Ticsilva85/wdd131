@@ -8,8 +8,6 @@
 }
 
 @media (min-width: 768px) {
-
-
     body {
     margin: 0;
     background-color: white;
@@ -101,10 +99,12 @@
 
     /* === MAIN === */
     main {
+        width: 100%;
         max-width: 1200px;
         margin: 0 auto;
         background-color: var(--background-color);
-        min-height: calc(100vh - 150px);
+        
+        flex: 1;
     }
 
     .holy-grail {
