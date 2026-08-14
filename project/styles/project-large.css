@@ -20,7 +20,7 @@
     /* === HEADER === */
 
     .logo {
-        width: 4vw;
+        width: 120px;
     }
 
     header > h1 {
@@ -215,7 +215,7 @@
     }
 
     .footer-brand .logo {
-        width: 70px;
+        width: 60px;
         height: auto;
         display: block;
         margin: 0;
@@ -224,8 +224,12 @@
     }
 
     .footer-brand h2 {
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: start;
         margin: 0;
         padding: 0;
+        padding-left: 10px;
         line-height: 1;
         white-space: nowrap;
     }
