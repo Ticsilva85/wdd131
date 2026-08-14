@@ -327,6 +327,7 @@ p {
 
 .form-row label {
     font-weight: bold;
+    font-size: 1.2rem;
     color: var(--primary-color);
 }
 
@@ -340,11 +341,12 @@ p {
 
 .add-btn {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--primary-color);
     border: none;
     padding: 0.8rem;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
