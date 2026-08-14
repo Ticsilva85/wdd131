@@ -8,6 +8,19 @@
 }
 
 @media (min-width: 768px) {
+
+
+    body {
+    margin: 0;
+    background-color: white;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+    /* === HEADER === */
+
     .logo {
         width: 4vw;
     }
@@ -23,6 +36,7 @@
         position: sticky;
         top: 0;
         z-index: 1000;
+        margin-bottom: 0;
     }
 
     .header-nav {
@@ -86,6 +100,12 @@
     }
 
     /* === MAIN === */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: var(--background-color);
+        min-height: calc(100vh - 150px);
+    }
 
     .holy-grail {
         display: grid;
@@ -93,19 +113,27 @@
         gap: 2rem;
 
         margin: 0 auto;
-        padding: 2rem;
+        padding: 0 2rem 2rem;
     }
 
     .start-btn {
         color: var(--primary-color);
         font-weight: bold;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+        display: block;
+        width: fit-content;
+        margin: -3rem auto 4rem;
+        padding: 1rem 2rem;
+
     }
 
     /* === Carousel === */
     .carousel {
-        width: 100%;
-        height: 650px;
+        position: relative;
+        top: 70px;
+        width: 681px;
+        height: 454px;
         overflow: hidden;
     }
 
@@ -114,7 +142,7 @@
         height: 100%;
     }
 
-    /* === Text Carousel === */
+    /* === No Text Carousel === */
     .text-carousel {
         width: 90%;
         margin: 0 auto 100px;
@@ -155,13 +183,15 @@
     }
 
     /* === FOOTER === */
+
+    .footer-logo {
+        width: 4vw;
+        height: 4vw;
+    }
+
     .footer-col {
         display: grid;
         grid-template-columns: 1fr 2fr;
-    }
-
-    .footer-brand {
-        display: flex;
-        
+        width: 100%;
     }
 }
