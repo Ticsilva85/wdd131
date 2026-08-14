@@ -7,7 +7,7 @@
     --header-font: "Bricolage Grotesque", sans-serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     body {
     margin: 0;
     background-color: var(--background-color);
@@ -203,6 +203,13 @@
     width: 100%;
     max-width: 1200px;
     padding: 0 2rem;
+
+    .planner-main h2 {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        width: 100%;
+    }
 }
 
     /* === FOOTER === */
