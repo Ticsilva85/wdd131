@@ -22,16 +22,52 @@
             <ul class="navigation">
                 <li><a href="project.html" class="active">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="start-now"><a href="#">Start Now!</a></li>
+                <li class="start-now"><a href="startnow.html">Start Now!</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+<main class="planner-main">
+        <h2>My Study Tasks</h2>
 
+        <form id="task-form" class="task-form">
+            <div class="form-row">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="e.g. Calculus" required>
+            </div>
+
+            <div class="form-row">
+                <label for="task-name">Task</label>
+                <input type="text" id="task-name" placeholder="e.g. Review chapter 4" required>
+            </div>
+
+            <div class="form-row">
+                <label for="due-date">Due date</label>
+                <input type="date" id="due-date">
+            </div>
+
+            <div class="form-row">
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <button type="submit" class="add-btn">Add Task</button>
+        </form>
+
+        <section class="filters">
+            <button data-filter="all" class="filter-btn active">All</button>
+            <button data-filter="pending" class="filter-btn">Pending</button>
+            <button data-filter="completed" class="filter-btn">Completed</button>
+        </section>
+
+        <ul id="task-list" class="task-list"></ul>
+
+        <p id="empty-message" class="empty-message">No tasks yet. Add one above to get started!</p>
     </main>
-
     
     <footer>
         <section class="footer-container">
