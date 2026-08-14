@@ -197,19 +197,33 @@
     }
 
     /* ***** STARTNOW.HTML ***** */
-
     .planner-main {
-    height: auto;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 2rem;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
     }
 
     .planner-main h2 {
-        display: block;
-        margin: 0 auto;
-        align-items: center;
         width: 100%;
+        margin: 0 auto 2rem;
+        text-align: center;
+    }
+
+    .task-form {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        background-color: var(--background-color);
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+        margin-bottom: 2rem;
     }
 
     /* === FOOTER === */

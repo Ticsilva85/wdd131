@@ -5,6 +5,11 @@
     --background-color: #F4F4F4;
     --font-color: #333333;
     --header-font: "Bricolage Grotesque", sans-serif;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
