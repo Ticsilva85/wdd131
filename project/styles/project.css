@@ -86,6 +86,16 @@ header > h1 {
     color: var(--background-color);
 }
 
+.start-now {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.start-now a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 .header-nav a:hover, .header-nav a:active {
     color: white;
     background-color: #364b65;

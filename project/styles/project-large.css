@@ -7,7 +7,7 @@
     --header-font: "Bricolage Grotesque", sans-serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     body {
     margin: 0;
     background-color: white;
@@ -63,7 +63,6 @@
 
     .navigation li {
         display: block;
-
     }
 
     .navigation a {
@@ -86,6 +85,8 @@
         background-color: #F18F01;
         border-radius: 5px;
         color: var(--primary-color);
+        width: 9.5rem;
+        white-space: nowrap;
     }
 
     .start-now > a:hover {
