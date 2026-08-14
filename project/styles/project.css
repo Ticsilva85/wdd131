@@ -126,6 +126,8 @@ header > h1 {
     font-weight: bold;
 }
 
+/* ***** PROJECT.HTML ***** */
+
 /* === MAIN === */
 .left-side {
     text-align: center;
@@ -251,6 +253,38 @@ p {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+}
+
+/* ***** ABOUTUS.HTML ***** */
+.profile {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.profile h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.profile h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.profile img {
+    float: right;
+    width: 180px;
+    height: auto;
+    margin: 0 0 1rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+
+.profile p {
+    line-height: 1.6;
+    margin-left: 20px;
 }
 
 /* === FOOTER === */
