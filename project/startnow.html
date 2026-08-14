@@ -27,46 +27,48 @@
         </nav>
     </header>
 
-<main class="planner-main">
-        <h2>My Study Tasks</h2>
+    <main>
+        <div class="planner-main">
+            <h2>My Study Tasks</h2>
 
-        <form id="task-form" class="task-form">
-            <div class="form-row">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="e.g. Calculus" required>
-            </div>
+            <form id="task-form" class="task-form">
+                <div class="form-row">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="e.g. Calculus" required>
+                </div>
 
-            <div class="form-row">
-                <label for="task-name">Task</label>
-                <input type="text" id="task-name" placeholder="e.g. Review chapter 4" required>
-            </div>
+                <div class="form-row">
+                    <label for="task-name">Task</label>
+                    <input type="text" id="task-name" placeholder="e.g. Review chapter 4" required>
+                </div>
 
-            <div class="form-row">
-                <label for="due-date">Due date</label>
-                <input type="date" id="due-date">
-            </div>
+                <div class="form-row">
+                    <label for="due-date">Due date</label>
+                    <input type="date" id="due-date">
+                </div>
 
-            <div class="form-row">
-                <label for="priority">Priority</label>
-                <select id="priority">
-                    <option value="low">Low</option>
-                    <option value="medium" selected>Medium</option>
-                    <option value="high">High</option>
-                </select>
-            </div>
+                <div class="form-row">
+                    <label for="priority">Priority</label>
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
 
-            <button type="submit" class="add-btn">Add Task</button>
-        </form>
+                <button type="submit" class="add-btn">Add Task</button>
+            </form>
 
-        <section class="filters">
-            <button data-filter="all" class="filter-btn active">All</button>
-            <button data-filter="pending" class="filter-btn">Pending</button>
-            <button data-filter="completed" class="filter-btn">Completed</button>
-        </section>
+            <section class="filters">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="pending" class="filter-btn">Pending</button>
+                <button data-filter="completed" class="filter-btn">Completed</button>
+            </section>
 
-        <ul id="task-list" class="task-list"></ul>
+            <ul id="task-list" class="task-list"></ul>
 
-        <p id="empty-message" class="empty-message">No tasks yet. Add one above to get started!</p>
+            <p id="empty-message" class="empty-message">No tasks yet. Add one above to get started!</p>
+        </div>
     </main>
     
     <footer>
