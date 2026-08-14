@@ -5,6 +5,7 @@
     --background-color: #F4F4F4;
     --font-color: #333333;
     --header-font: "Bricolage Grotesque", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -32,7 +33,7 @@ header > h1 {
 }
 
 .logo {
-    width: 20vw;
+    width: 120px;
     padding:20px;
 }
 
@@ -265,13 +266,16 @@ footer {
 }
 
 .footer-brand .logo {
-    width: 60px;
+    width: 120px;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-brand h2 {
     margin: 0.5rem 0 1rem;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .footer-col > p {
